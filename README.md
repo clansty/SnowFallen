@@ -1,2 +1,2 @@
 # SnowFallen
-SnowFallen Rebuild Project
+拉拉人的Ghost主题
