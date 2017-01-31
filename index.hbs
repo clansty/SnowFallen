@@ -158,17 +158,37 @@ https://moyu233-1251600285.file.myqcloud.com/favicon.ico
 			<div class="col s12 m12" style="margin:0 auto">
 				<div id="art-container">
 					{{#foreach posts}}
+<!--
+    <div class="article-body">
+    <div class="article-tag">
+        <div class="article-title">
+            <a href="/zai-jian-2016/"><h2>你好2017</h2></a>
+            <div class="link-border"></div>
+        </div>
+        <div class="left article-info">
+            <p><i class="fa fa-tags"></i> 未分类</p>
+            <p>January 01, 2017</p>
+        </div>
+    </div>
+-->
 					<div class="article-body">
 						<div class="article-tag">
-							<!--div class="article-title"-->
+							<div class="article-title">
 								<a href="{{url}}">
 								<h2>{{title}}</h2>
 								</a>
-							<!--/div-->
-							<p>
+								<div class="link-border">
+								</div>
+							</div>
+							<div class="left article-info">
+           <p><i class="fa fa-tags"></i>{{tag}}</p>
+           <p>{{date format="DD MMMM YYYY"}}</p>
+          </div>
+							</div>
+							<!--p>
 									{{date format="DD MMMM YYYY"}}
-							</p>
-						</div>
+							</p-->
+						<!--/div-->
 						<div class="article-background" style="background-image:url()">
 						</div>
 						<div class="article-content">
@@ -195,11 +215,11 @@ https://moyu233-1251600285.file.myqcloud.com/favicon.ico
 						<p style="font-size:14px">
 							<span>许可协议</span>:<i class="fa fa-creative-commons"></i><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a>
 						</p>
-						<div>
+						<!--div>
 							<a href="https://github.com/moeyi" rel="nofollow"><i class="fa fa-github"></i></a>
 							<a href="https://twitter.com/hujl1234" rel="nofollow"><i class="fa fa-twitter"></i></a>
 							<a href="mailto:hujl634@gmail.com" rel="nofollow"><i class="fa fa-envelope"></i></a>
-						</div>
+						</div-->
 					</div>
 				</div>
 				<div class="col s12 m7">
