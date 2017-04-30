@@ -8,76 +8,10 @@
 </head>
 <body>
 {{> "loading"}}
-<div id="head-menu" class="banner-notfade">
-	<div id="menu-container" style="position:relative">
-		<div class="right">
-			<a class="link" id="display-links"><i class="fa fa-navicon"></i></a>
-			<div id="header-nav">
-				<a class="link line-link" href="{{@blog.url}}/guestbook" title="Guestbook"><i class="fa fa-envelope"></i></a>
-				<a class="link line-link" href="{{@blog.url}}/friends" title="Friends"><i class="fa fa-users"></i></a>
-				<a class="link line-link" href="{{@blog.url}}/project" title="Project"><i class="fa fa-book"></i></a>
-				<a class="link line-link" href="{{@blog.url}}/about" title="About"><i class="fa fa-credit-card"></i></a>
-			</div>
-		</div>
-		<div class="left">
-			<a class="title" href="{{@blog.url}}"><i class="fa fa-home"></i> {{@blog.title}}</a>
-		</div>
-		<div class="to-top" style="display:inline-block;z-index:0;position:absolute;left:0;width:100%;height:100%">
-			<p style="text-align:center">
-			</p>
-		</div>
-	</div>
-</div>
+{{> "menu"}}
 <div class="pjax-container">
-	<div class="banner" style="background-image:url(https://o55ydpgd4.qnssl.com/assets/images/banner.jpg);height:700px">
-		<div class="banner-text">
-			<div class="banner-container">
-				<div class="banner-border-top">
-				</div>
-				<h1 id="big-title">{{@blog.title}}</h1>
-				<h3 id="big-description">{{@blog.description}}</h3>
-				<div class="banner-border-bottom">
-				</div>
-			</div>
-		</div>
-		<a href="#content" class="go-down scroll"><i class="fa fa-angle-double-down"></i></a>
-	</div>
-	<div id="divider">
-	</div>
-	<div class="row" id="content">
-		<div class="container">
-			<div class="col s12 m12" style="margin:0 auto">
-				<div id="art-container">
-					{{#foreach posts}}
-					<div class="article-body">
-						<div class="article-tag">
-							<div class="article-title">
-								<a href="{{url}}">
-								<h2>{{title}}</h2>
-								</a>
-								<div class="link-border">
-								</div>
-							</div>
-							<div class="left article-info">
-           <p><i class="fa fa-tags"></i>{{tags}}</p>
-           <p>{{date format="DD MMMM YYYY"}}</p>
-          </div>
-							</div>
-						<div class="article-background" style="background-image:url()">
-						</div>
-						<div class="article-content">
-							{{excerpt words="26"}}
-							<p>
-								<a href="{{url}}">阅读全文...</a>
-							</p>
-						</div>
-					</div>
-					{{/foreach}}
-					<p>{{pagination}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
+{{> "pjax1"}}
+{{> "postlop"}}
 	<div class="footer">
 		<div class="row">
 			<div class="container">

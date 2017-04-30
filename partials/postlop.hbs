@@ -1,0 +1,34 @@
+	<div class="row" id="content">
+		<div class="container">
+			<div class="col s12 m12" style="margin:0 auto">
+				<div id="art-container">
+					{{#foreach posts}}
+					<div class="article-body">
+						<div class="article-tag">
+							<div class="article-title">
+								<a href="{{url}}">
+								<h2>{{title}}</h2>
+								</a>
+								<div class="link-border">
+								</div>
+							</div>
+							<div class="left article-info">
+           <p><i class="fa fa-tags"></i>{{tags}}</p>
+           <p>{{date format="DD MMMM YYYY"}}</p>
+          </div>
+							</div>
+						<div class="article-background" style="background-image:url()">
+						</div>
+						<div class="article-content">
+							{{excerpt words="26"}}
+							<p>
+								<a href="{{url}}">ÔÄ¶ÁÈ«ÎÄ...</a>
+							</p>
+						</div>
+					</div>
+					{{/foreach}}
+					<p>{{pagination}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
